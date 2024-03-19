@@ -33,7 +33,8 @@ class CategoryActivity : ComponentActivity() {
                         style = TextStyle(
                             fontSize = 46.sp,
                             fontFamily = FontFamily.SansSerif
-                        ))
+                        )
+                    )
                 }
             }
         }

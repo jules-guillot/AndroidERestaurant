@@ -3,6 +3,7 @@ import android.content.Intent
 import fr.isen.guillot.androidrestaurant.ui.theme.AndroidERestaurantTheme
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -23,9 +24,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
 
 class HomeActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -82,6 +81,7 @@ fun Menucategory(name : String ) {
         )
         ElevatedButton(
             onClick = {
+                Toast.makeText(context, "C'est parti !", Toast.LENGTH_SHORT).show()
                 val intent =
                     Intent(context, CategoryActivity::class.java).apply {
                         putExtra("categoryName", name)
