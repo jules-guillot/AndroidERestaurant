@@ -11,24 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidERestaurant"
-        tools:targetApi="31" >
+        tools:targetApi="34" >
         <activity
-            android:name=".Desserts"
-            android:exported="false"
-            android:label="@string/title_activity_desserts"
-            android:theme="@style/Theme.AndroidERestaurant" />
-        <activity
-            android:name=".Plats"
-            android:exported="false"
-            android:label="@string/title_activity_plats"
-            android:theme="@style/Theme.AndroidERestaurant" />
-        <activity
-            android:name=".Entrees"
+            android:name=".CategoryActivity"
             android:exported="false"
             android:label="@string/title_activity_entrees"
             android:theme="@style/Theme.AndroidERestaurant" />
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AndroidERestaurant" >
