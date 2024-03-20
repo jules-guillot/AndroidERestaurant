@@ -3,4 +3,12 @@
     <string name="title_activity_entrees">Entrees</string>
     <string name="title_activity_plats">Plats</string>
     <string name="title_activity_desserts">Desserts</string>
+
+    <string name="entree1">Salade César</string>
+    <string name="entree2">Soupe à l\'oignon</string>
+    <string name="plat1">Poulet Rôti</string>
+    <string name="plat2">Lasagnes à la Bolognaise</string>
+    <string name="dessert1">Tarte aux pommes</string>
+    <string name="dessert2">Mousse au chocolat</string>
+
 </resources>
