@@ -10,5 +10,45 @@
     <string name="plat2">Lasagnes à la Bolognaise</string>
     <string name="dessert1">Tarte aux pommes</string>
     <string name="dessert2">Mousse au chocolat</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_cart">CartActivity</string>
+
+    <string-array name="salade_césar_ingredients">
+        <item>Laitue romaine</item>
+        <item>Croutons</item>
+        <item>Parmesan</item>
+        <item>Sauce César</item>
+    </string-array>
+
+    <string name="salade_césar_prix">10,99 €</string>
+
+    <string-array name="soupe_à_l_oignon_ingredients">
+        <item>Laitue chargée</item>
+        <item>Croutons</item>
+        <item>Parmesan</item>
+        <item>Sauce César</item>
+    </string-array>
+
+    <string name="soupe_à_l_oignon_prix">11,99 €</string>
+
+    <string-array name="poulet_rôti_ingredients">
+        <item>Poulet</item>
+        <item>Beurre</item>
+        <item>Herbes de Provence</item>
+        <item>Ail</item>
+        <item>Citron</item>
+    </string-array>
+
+    <string name="poulet_rôti_prix">12,99 €</string>
+
+    <string-array name="tarte_aux_pommes_ingredients">
+        <item>Pommes</item>
+        <item>Pâte brisée</item>
+        <item>Sucre</item>
+        <item>Beurre</item>
+        <item>Cannelle</item>
+    </string-array>
+
+    <string name="tarte_aux_pommes_prix">13,99 €</string>
 
 </resources>

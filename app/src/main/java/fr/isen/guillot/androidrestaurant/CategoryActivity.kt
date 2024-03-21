@@ -1,8 +1,10 @@
 package fr.isen.guillot.androidrestaurant
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,12 +16,14 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import fr.isen.guillot.androidrestaurant.ui.theme.AndroidERestaurantTheme
+import fr.isen.guillot.androidrestaurant.ui.theme.DetailActivity
 
 class CategoryActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,7 +54,14 @@ class CategoryActivity : ComponentActivity() {
                             )
                         ) {
                             items(items = menuItemsForCategory, itemContent = { menuItem ->
-                                MenuItemView(menuItem)
+                                val context = LocalContext.current
+                                MenuItemView(menuItem) {
+                                    val intent = Intent(context, DetailActivity::class.java).apply {
+                                        putExtra("itemName", menuItem.title)
+                                        // Vous pouvez aussi passer d'autres informations ici, comme l'ID de l'élément
+                                    }
+                                    context.startActivity(intent)
+                                }
                             })
                         }
                     }
@@ -75,9 +86,10 @@ class CategoryActivity : ComponentActivity() {
 data class MenuItem(val id: Int, val title: String, val category: String)
 
 @Composable
-fun MenuItemView(menuItem: MenuItem) {
+fun MenuItemView(menuItem: MenuItem, onClick: () -> Unit) {
     Text(text = menuItem.title,
         style = TextStyle(fontSize = 32.sp, fontFamily = FontFamily.SansSerif),
-        modifier = Modifier.padding(bottom = 8.dp)
+        modifier = Modifier.clickable(onClick = onClick)
     )
 }
+
