@@ -68,5 +68,13 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation ("io.coil-kt:coil-compose:2.1.0")
+    implementation ("io.coil-kt:coil-compose:2.5.0")
+    implementation ("com.android.volley:volley:1.2.1")
+
+    implementation ("androidx.compose.ui:ui:1.6.4")
+    implementation ("androidx.compose.material:material:1.6.4")
+    implementation ("androidx.compose.ui:ui-tooling-preview:1.6.4")
+
+    implementation ("com.google.code.gson:gson:2.10.1")
+
 }
