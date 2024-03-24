@@ -50,5 +50,6 @@
     </string-array>
 
     <string name="tarte_aux_pommes_prix">13,99 €</string>
+    <string name="title_activity_detail_activity.kt">DetailActivity.kt</string>
 
 </resources>

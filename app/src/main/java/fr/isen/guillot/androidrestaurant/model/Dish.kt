@@ -2,7 +2,7 @@ package fr.isen.guillot.androidrestaurant.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Items (
+data class Dish (
 
   @SerializedName("id"            ) var id          : String?                = null,
   @SerializedName("name_fr"       ) var nameFr      : String?                = null,
